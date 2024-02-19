@@ -8,9 +8,17 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <label for="grid-size">Size (Width x Height): </label>
-        <input type="number" id="grid-size-value" name="grid-size" min="4" max="100" value="16" />
-        <button class="grid-create-button" type="button" onclick="drawGrid();">Draw Grid</button>
+        <div id="options">
+            <div>
+                <label for="grid-size">Size (Width x Height): </label>
+                <input type="number" id="grid-size-value" name="grid-size" min="4" max="100" value="16" />
+                <button class="grid-create-button" type="button" onclick="drawGrid();">Draw Grid</button>
+            </div>
+            <div>
+                <label for="color-mode-toggle">Toggle color mode: </label>
+                <input type="checkbox" id="color-mode-toggle" name="color-mode-toggle" autocomplete="off" />
+            </div>
+        </div>
         <div id="grid-container"></div>
     </body>
 </html>
